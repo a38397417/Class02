@@ -14,6 +14,8 @@
 		49080C4C22D0A2FE0069432C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49080C4A22D0A2FE0069432C /* LaunchScreen.storyboard */; };
 		49080C5722D0A2FE0069432C /* Class02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49080C5622D0A2FE0069432C /* Class02Tests.swift */; };
 		49080C6222D0A2FE0069432C /* Class02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49080C6122D0A2FE0069432C /* Class02UITests.swift */; };
+		49ABCA7322D4248C00071DF9 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABCA7222D4248C00071DF9 /* AViewController.swift */; };
+		49ABCA7522D424A100071DF9 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABCA7422D424A100071DF9 /* BViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		49080C5D22D0A2FE0069432C /* Class02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Class02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49080C6122D0A2FE0069432C /* Class02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class02UITests.swift; sourceTree = "<group>"; };
 		49080C6322D0A2FE0069432C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49ABCA7222D4248C00071DF9 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		49ABCA7422D424A100071DF9 /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				49080C4822D0A2FE0069432C /* Assets.xcassets */,
 				49080C4A22D0A2FE0069432C /* LaunchScreen.storyboard */,
 				49080C4D22D0A2FE0069432C /* Info.plist */,
+				49ABCA7222D4248C00071DF9 /* AViewController.swift */,
+				49ABCA7422D424A100071DF9 /* BViewController.swift */,
 			);
 			path = Class02;
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49ABCA7322D4248C00071DF9 /* AViewController.swift in Sources */,
+				49ABCA7522D424A100071DF9 /* BViewController.swift in Sources */,
 				49080C4422D0A2FC0069432C /* ViewController.swift in Sources */,
 				49080C4222D0A2FC0069432C /*                                                                                                           .swift in Sources */,
 			);

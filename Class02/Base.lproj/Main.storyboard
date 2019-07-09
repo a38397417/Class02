@@ -81,47 +81,48 @@
         <!--View Controller-->
         <scene sceneID="yIV-BA-Jzk">
             <objects>
-                <viewController id="hKU-1q-UL8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wVN-Zn-3S8">
+                <viewController id="hKU-1q-UL8" customClass="AViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wVN-Zn-3S8" customClass="AVi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roG-MV-3Pe">
-                                <rect key="frame" x="349" y="831" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Q5P-nh-if5"/>
-                                    <constraint firstAttribute="width" constant="46" id="yk4-vZ-ZVx"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.44004678159999999" green="0.60720063639999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eUc-p4-SIr">
-                                <rect key="frame" x="1" y="831" width="346" height="30"/>
+                                <rect key="frame" x="7" y="422" width="346" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5861446588" blue="0.67754202149999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roG-MV-3Pe">
+                                <rect key="frame" x="361" y="422" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="U0w-JG-Am0"/>
+                                    <constraint firstAttribute="width" constant="46" id="ZIl-Ru-5FG"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.44004678159999999" green="0.60720063639999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTestClick:" destination="hKU-1q-UL8" eventType="touchUpInside" id="JOa-5W-emn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eUc-p4-SIr" firstAttribute="leading" secondItem="bp0-An-cv0" secondAttribute="leading" constant="8" id="9Wp-cP-Sd6"/>
-                            <constraint firstItem="roG-MV-3Pe" firstAttribute="leading" secondItem="eUc-p4-SIr" secondAttribute="trailing" constant="8" id="9fr-sd-qKj"/>
-                            <constraint firstItem="bp0-An-cv0" firstAttribute="bottom" secondItem="roG-MV-3Pe" secondAttribute="bottom" constant="1" id="EqD-PR-3f4"/>
-                            <constraint firstItem="roG-MV-3Pe" firstAttribute="leading" secondItem="eUc-p4-SIr" secondAttribute="trailing" constant="1" id="KGW-Ao-iie"/>
-                            <constraint firstItem="bp0-An-cv0" firstAttribute="bottom" secondItem="roG-MV-3Pe" secondAttribute="bottom" constant="1" id="L6d-zl-loT"/>
-                            <constraint firstItem="bp0-An-cv0" firstAttribute="trailing" secondItem="roG-MV-3Pe" secondAttribute="trailing" constant="19" id="LYI-e3-f29"/>
-                            <constraint firstItem="bp0-An-cv0" firstAttribute="bottom" secondItem="eUc-p4-SIr" secondAttribute="bottom" constant="1" id="PmQ-EA-7uN"/>
-                            <constraint firstItem="roG-MV-3Pe" firstAttribute="trailing" secondItem="wVN-Zn-3S8" secondAttribute="trailingMargin" constant="1" id="U96-36-6nB"/>
-                            <constraint firstItem="eUc-p4-SIr" firstAttribute="leading" secondItem="bp0-An-cv0" secondAttribute="leading" constant="10" id="drX-9c-CGq"/>
-                            <constraint firstItem="roG-MV-3Pe" firstAttribute="leading" secondItem="eUc-p4-SIr" secondAttribute="trailing" constant="3" id="oZe-Ug-i9h"/>
-                            <constraint firstItem="roG-MV-3Pe" firstAttribute="leading" secondItem="eUc-p4-SIr" secondAttribute="trailing" constant="2" id="qaQ-HV-0ZA"/>
-                            <constraint firstItem="eUc-p4-SIr" firstAttribute="leading" secondItem="bp0-An-cv0" secondAttribute="leading" constant="1" id="zFa-TH-dqI"/>
+                            <constraint firstItem="roG-MV-3Pe" firstAttribute="leading" secondItem="eUc-p4-SIr" secondAttribute="trailing" constant="8" id="3ba-Mf-URO"/>
+                            <constraint firstItem="bp0-An-cv0" firstAttribute="trailing" secondItem="roG-MV-3Pe" secondAttribute="trailing" constant="7" id="GTd-oG-9Tc"/>
+                            <constraint firstItem="bp0-An-cv0" firstAttribute="bottom" secondItem="roG-MV-3Pe" secondAttribute="bottom" constant="410" id="JZm-IO-14L"/>
+                            <constraint firstItem="bp0-An-cv0" firstAttribute="trailing" secondItem="roG-MV-3Pe" secondAttribute="trailing" constant="7" id="aPt-0D-x3y"/>
+                            <constraint firstItem="roG-MV-3Pe" firstAttribute="centerY" secondItem="eUc-p4-SIr" secondAttribute="centerY" id="c47-sC-n6f"/>
+                            <constraint firstItem="eUc-p4-SIr" firstAttribute="leading" secondItem="bp0-An-cv0" secondAttribute="leading" constant="7" id="vov-Js-j4R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bp0-An-cv0"/>
                     </view>
+                    <connections>
+                        <outlet property="btnHiBottomConstraint" destination="JZm-IO-14L" id="ZWF-QP-m7H"/>
+                        <outlet property="lbMSG" destination="eUc-p4-SIr" id="lxW-OX-G37"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6HU-Ax-Izn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,AsyncReponseDelegate {
+    func receviedReponse(_ sender: AsyncRequestWorker, responseString: String, tag: Int) {
+        print(responseString)
+    }
+    
 
     
     @IBOutlet weak var lbMSG: UILabel!
@@ -38,9 +42,12 @@ class ViewController: UIViewController {
             卖西瓜的数量 = 10
         }
         print("我要卖：\( 卖西瓜的数量 )颗西瓜")
+            let worker : AsyncRequestWorker = AsyncRequestWorker()
+            worker.getResponse(from: "https://www.baidu.com", tag: 1)
+            worker.reponseDelegate = self
 
-            
-        
+            NotificationCenter.default.addObserver(self, selector: #selector(received(notification:)), name: NSNotification.Name(rawValue: "response.received") , object:nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(received(notification:)), name: NSNotification.Name(rawValue: "response.received") , object:nil)
     
     }
 
@@ -50,4 +57,12 @@ class ViewController: UIViewController {
 
 
 }
+    @objc func received(notification: NSNotification) {
+        let hope = notification.userInfo!["response"]
+        print(hope)
+//        let keyboardHeight = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+//        print("猜猜看：\(keyboardHeight)")
+//        btnHiBottomConstraint.constant =  keyboardHeight
+    }
+    
 }

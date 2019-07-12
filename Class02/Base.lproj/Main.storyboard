@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d5z-Yp-P2M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F9z-JO-YvE">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -184,9 +184,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="R5l-WX-5pN" id="VWr-b0-TMA"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,6 +205,8 @@
                         <viewLayoutGuide key="safeArea" id="dfR-VR-o8A"/>
                     </view>
                     <connections>
+                        <outlet property="textPassWord" destination="9Zr-kX-o00" id="4z5-jd-KWu"/>
+                        <outlet property="txtAccount" destination="1gK-wd-BnX" id="csN-Xo-YDO"/>
                         <segue destination="9le-9S-BSt" kind="show" id="CDk-kX-yys"/>
                     </connections>
                 </viewController>
@@ -278,15 +277,15 @@
             </objects>
             <point key="canvasLocation" x="4143.4782608695659" y="-383.03571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--My Web View Controller-->
         <scene sceneID="JAr-ih-jTq">
             <objects>
-                <viewController id="F9z-JO-YvE" sceneMemberID="viewController">
+                <viewController id="F9z-JO-YvE" customClass="MyWebViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rEM-1O-mgM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvd-ad-SLt" customClass="m">
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvd-ad-SLt">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -314,6 +313,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4s9-fS-5FK">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WFP-vu-SgW" id="aEr-OP-wnF"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -325,6 +327,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7ip-vb-z2U"/>
                     </view>
+                    <connections>
+                        <outlet property="myMapView" destination="4s9-fS-5FK" id="iGz-BC-fLe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ig-c1-Nyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

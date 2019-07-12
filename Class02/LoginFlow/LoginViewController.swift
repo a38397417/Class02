@@ -10,6 +10,13 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    
+    @IBOutlet weak var txtAccount: UITextField!
+    
+    @IBOutlet weak var textPassWord: UITextField!
+    
+    @IBOutlet weak var txtHi : UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

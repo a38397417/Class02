@@ -131,12 +131,13 @@
 			isa = PBXGroup;
 			children = (
 				49ADF78422D7349C002A2674 /* WebFlow */,
+				49ADF77B22D71497002A2674 /* LoginFlow */,
 				49ADF78322D7348A002A2674 /* MapFlow */,
 				49ADF77E22D73019002A2674 /* MainFlow */,
-				49ADF77B22D71497002A2674 /* LoginFlow */,
 				49080C4122D0A2FC0069432C /*                                                                                                           .swift */,
 				49080C4322D0A2FC0069432C /* ViewController.swift */,
 				49080C4522D0A2FC0069432C /* Main.storyboard */,
+				49ADF77F22D73074002A2674 /* MainViewController.swift */,
 				49080C4822D0A2FE0069432C /* Assets.xcassets */,
 				49080C4A22D0A2FE0069432C /* LaunchScreen.storyboard */,
 				49080C4D22D0A2FE0069432C /* Info.plist */,
@@ -176,7 +177,6 @@
 		49ADF77E22D73019002A2674 /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
-				49ADF77F22D73074002A2674 /* MainViewController.swift */,
 				49ADF78122D7308E002A2674 /* DetalViewController.swift */,
 			);
 			path = MainFlow;
